@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 export class Flag extends Component {
   render() {
@@ -12,7 +12,12 @@ export class Flag extends Component {
 
 export class Ingredient extends Component {
   render() {
-    return React.createElement("h4", {}, "Ingrediente");
+    return (
+      <Fragment>
+        <h1>Ingredientes</h1>
+        <h1>Ingredientes</h1>
+      </Fragment>
+    );
   }
 }
 
