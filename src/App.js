@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Header from "./components/header";
-import Dish from "./components/dish";
+import Dish, { Flag, Ingredient } from "./components/dish";
 
 import "./styles/App.css";
 
@@ -11,6 +11,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Dish />
+        <Flag />
       </div>
     );
   }
