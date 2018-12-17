@@ -20,9 +20,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        {
-          // <h1>Platillos Típicos</h1>
-        }
+        <h4>Platillos Típicos</h4>
       </div>
     );
   }

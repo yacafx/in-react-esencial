@@ -14,8 +14,8 @@ export class Ingredient extends Component {
   render() {
     return (
       <Fragment>
-        <h1>Ingredientes</h1>
-        <h1>Ingredientes</h1>
+        <h4>Ingredientes</h4>
+        <h4>Ingredientes</h4>
       </Fragment>
     );
   }
