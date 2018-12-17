@@ -12,11 +12,7 @@ export class Flag extends Component {
 
 export class Ingredient extends Component {
   render() {
-    return (
-      <div>
-        <h1>Ingredientes</h1>
-      </div>
-    );
+    return React.createElement("h4", {}, "Ingrediente");
   }
 }
 
