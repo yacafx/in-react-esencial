@@ -24,7 +24,7 @@ export class Ingredient extends Component {
 class Dish extends Component {
   render() {
     return (
-      <div>
+      <div className="dish">
         <h1>Platillo</h1>
         <Ingredient />
       </div>
