@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Dish />
+        <Dish name={this.dish} qty="3" />
         Yo como {this.dish}
         <ul>
           {this.dishes.map(dish => (
