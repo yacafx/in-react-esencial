@@ -23,13 +23,23 @@ export class Ingredient extends Component {
 }
 
 class Dish extends Component {
+  ingredients = ["Tortilla", "Carne", "Cebolla"];
+
+  countIngredients() {
+    return this.ingredients.length;
+  }
+
   render() {
     return (
       <div className="dish">
         <h1>{this.props.name}</h1>
-        {this.props.qty}
-        <Ingredient />
-        <Button variant="contained">Default</Button>
+        <h3>{this.countIngredients()}</h3>
+        <ul>
+          {this.ingredients.map(ingredient => (
+            <li>{ingredient}</li>
+          ))}
+        </ul>
+        <Button variant="contained">Elegir</Button>
       </div>
     );
   }

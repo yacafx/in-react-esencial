@@ -13,12 +13,6 @@ class App extends Component {
       <div className="App">
         <Header />
         <Dish name={this.dish} qty="3" />
-        Yo como {this.dish}
-        <ul>
-          {this.dishes.map(dish => (
-            <li>{dish}</li>
-          ))}
-        </ul>
       </div>
     );
   }
