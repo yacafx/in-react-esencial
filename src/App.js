@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Header from "./components/header";
 import NewDish from "./components/newDish";
-import Dish, { Flag, Ingredient } from "./components/dish";
+import Dish from "./components/dish";
 
 import "./styles/App.css";
 

@@ -35,8 +35,8 @@ class Dish extends Component {
         <h1>{this.props.name}</h1>
         <h3>{this.countIngredients()}</h3>
         <ul>
-          {this.ingredients.map(ingredient => (
-            <li>{ingredient}</li>
+          {this.ingredients.map((ingredient, index) => (
+            <li key={index}>{ingredient}</li>
           ))}
         </ul>
         <Button variant="contained">Elegir</Button>
