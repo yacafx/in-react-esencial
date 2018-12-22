@@ -11,6 +11,7 @@ const Router = () => (
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/platillos" component={Dishes} />
+      <Route path="/platillo/:name" component={Dish} />
       <Route path="/countries" component={Countries} />
     </Switch>
   </BrowserRouter>
