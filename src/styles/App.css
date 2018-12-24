@@ -32,3 +32,8 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  max-width: 200px;
+  margin: 2rem;
+}
