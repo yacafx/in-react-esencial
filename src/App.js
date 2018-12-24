@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Header from "./components/header";
 import NewDish from "./components/newDish";
-import Dish from "./components/dish";
+// import Dish from "./components/dish";
 import Button from "@material-ui/core/Button";
 
 import "./styles/App.css";
