@@ -28,6 +28,8 @@ class Dish extends Component {
     newState.name = e.currentTarget.value;
 
     this.setState(newState);
+
+    this.props.onUpdateDish(this.props.index, newState.name);
   };
 
   render() {
