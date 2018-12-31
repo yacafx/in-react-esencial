@@ -6,16 +6,29 @@ import {
   ListItem,
   ListSubheader,
   ListItemText,
-  ListItemIcon
+  ListItemIcon,
+  TextField,
+  IconButton
 } from "@material-ui/core";
 import ScatterPlot from "@material-ui/icons/ScatterPlot";
+import Edit from "@material-ui/icons/Edit";
 
 class Dish extends Component {
-  ingredients = ["Tortilla", "Carne", "Cebolla"];
+  state = {
+    edit: false,
+    name: this.props.name
+  };
 
-  countIngredients() {
-    return this.ingredients.length;
-  }
+  edit = e => {
+    this.setState({ edit: !this.state.edit });
+  };
+
+  handleChange = e => {
+    let newState = { ...this.state };
+    newState.name = e.currentTarget.value;
+
+    this.setState(newState);
+  };
 
   render() {
     return (
@@ -24,7 +37,23 @@ class Dish extends Component {
           <List
             component="nav"
             subheader={
-              <ListSubheader component="div">{this.props.name}</ListSubheader>
+              <ListSubheader component="div">
+                {this.state.edit ? (
+                  <TextField
+                    label="Platillo..."
+                    type="text"
+                    margin="normal"
+                    variant="outlined"
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                  />
+                ) : (
+                  this.props.name
+                )}
+                <IconButton size="small" onClick={this.edit}>
+                  <Edit />
+                </IconButton>
+              </ListSubheader>
             }
           >
             {this.props.ingredients.map((ingredient, index) => (
