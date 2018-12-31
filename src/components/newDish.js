@@ -16,6 +16,8 @@ class NewDish extends Component {
     event.preventDefault();
     // console.log(this.newDish.current.value);
     console.log(this.newDish.value);
+    this.props.onAddDish(this.newDish.value);
+    this.newDish.value = "";
   };
 
   render() {

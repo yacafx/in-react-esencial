@@ -26,11 +26,26 @@ class App extends Component {
     this.setState(newState);
   };
 
+  addDish = dishName => {
+    let newState = { ...this.state };
+
+    const newDish = {
+      id: newState.dishes.dishes.length,
+      name: dishName,
+      country: "México",
+      ingredients: ["Semillas", "Pollo", "Arroz"]
+    };
+
+    newState.dishes.dishes.push(newDish);
+
+    this.setState(newState);
+  };
+
   render() {
     return (
       <div className="App">
         <Header />
-        <NewDish />
+        <NewDish onAddDish={this.addDish} />
         {/* <Dish name={this.dish} qty="3" /> */}
         <Dishes data={this.state.dishes} onUpdateDish={this.updateDish} />
       </div>
