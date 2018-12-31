@@ -1,14 +1,5 @@
 import React, { Component } from "react";
-import {
-  Button,
-  List,
-  ListItem,
-  ListSubheader,
-  ListItemText,
-  ListItemIcon,
-  GridList
-} from "@material-ui/core";
-import Restaurant from "@material-ui/icons/Restaurant";
+import { GridList } from "@material-ui/core";
 
 import Dish from "./dish.js";
 
