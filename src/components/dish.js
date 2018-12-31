@@ -32,6 +32,10 @@ class Dish extends Component {
     this.props.onUpdateDish(this.props.index, newState.name);
   };
 
+  componentDidUpdate() {
+    console.log("Componente actualizado");
+  }
+
   render() {
     return (
       <Card className="card">
