@@ -32,10 +32,6 @@ export class Countries extends Component {
     this.setState(newState);
   };
 
-  componentWillUnmount() {
-    console.log("componente desmontado");
-  }
-
   render() {
     return (
       <div>
